@@ -58,6 +58,9 @@ export default class RaisedTextButton extends PureComponent {
         disableAnimation={disableAnimation}
       >
         <Animated.Text
+          accessible={props.accessible}
+          accessibilityLabel={props.accessibilityLabel}
+          testID={props.testID}
           style={[styles.title, titleStyle, titleStyleOverrides]}
           numberOfLines={1}
         >
